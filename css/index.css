@@ -1,0 +1,114 @@
+/* Основные стили */
+:root {
+    --background-color: #1a1a1a; /* Тёмный фон */
+    --text-color: #ffa500; /* Желто-оранжевый текст */
+    --border-color: #ffcc66; /* Светлый оттенок для рамок */
+    --primary-color: #ffa500; /* Основной синий для анимации загрузки */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Контент с отступами */
+.content {
+    padding: 20px;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Анимация загрузки */
+.loading-spinner {
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    border-left-color: var(--primary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Группы ссылок */
+.group {
+    transition: color 0.3s, border-color 0.3s;
+    color: var(--text-color);
+    border-color: transparent;
+}
+
+.group:hover {
+    color: var(--border-color);
+    border-color: var(--border-color);
+}
+
+.group svg {
+    fill: currentColor;
+    transition: fill 0.3s, stroke 0.3s;
+}
+
+/* Тёмные стили для заголовков, кнопок и ссылок */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--border-color);
+}
+
+button {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--border-color);
+    color: var(--background-color);
+}
+
+/* Основные стили ссылок */
+.group {
+    transition: color 0.3s, border-color 0.3s;
+    color: var(--primary-color);
+    border-color: transparent;
+}
+
+/* Эффект наведения (hover) - белый текст */
+.group:hover {
+    color: #ffffff;
+    border-color: #cccccc;
+}
+
+/* Активная ссылка - золотая рамка */
+.active-link {
+    color: #ffffff; /* Белый текст для активной ссылки */
+    background: #c09400;
+    border-color: #ffd700; /* Золотая рамка */
+}
+
+.circle {
+    display: inline-block; /* Keep them inline */
+    width: 20px; /* Set the size of the circle */
+    height: 20px; /* Set the size of the circle */
+    border-radius: 50%; /* Make it a circle */
+    margin-right: 5px; /* Space between circle and text */
+}

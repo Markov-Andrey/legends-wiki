@@ -1,0 +1,19 @@
+.circle {
+    display: inline-block; /* Keep them inline */
+    width: 20px; /* Set the size of the circle */
+    height: 20px; /* Set the size of the circle */
+    border-radius: 50%; /* Make it a circle */
+    margin-right: 5px; /* Space between circle and text */
+}
+
+.weak {
+    background-color: red; /* Red for weak */
+}
+
+.medium {
+    background-color: orange; /* Orange for medium */
+}
+
+.strong {
+    background-color: green; /* Green for strong */
+}
