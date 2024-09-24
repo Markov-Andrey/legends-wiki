@@ -9,8 +9,8 @@ function homePage() {
                 <!-- Описание проекта -->
                 <h1 class="sr-only">WarCraft Legends</h1>
                 <p class="text-md sm:text-lg lg:text-xl mb-6 leading-relaxed"> <!-- Уменьшение шрифтов -->
-                    Welcome to <span class="font-bold text-yellow-300">WarCraft Legends</span> — a unique adaptation
-                    of the cooperative mode from StarCraft into the world of <span class="font-bold text-yellow-300">WarCraft Reforged</span>.
+                    Welcome to <span class="font-bold text-yellow-300">WarCraft Legends</span> — a unique adaptation of StarCraft's co-op mode for 
+                    <span class="font-bold text-yellow-300">WarCraft Reforged</span>.
                     Here you'll find familiar mechanics, legendary heroes, and dynamic battles, woven into the epic world of Azeroth.
                     Join forces with your friends and dive into epic battles against overwhelming enemy forces!
                 </p>
