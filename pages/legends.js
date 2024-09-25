@@ -1,8 +1,8 @@
 function renderHeroGrid(heroes) {
     return `
-        <div class="grid grid-cols-3 mx-auto w-1/2">
-            ${heroes.map(hero => `
-                <div class="flex justify-center items-center">
+        <div class="flex flex-wrap justify-center mx-auto w-full">
+            ${heroes.map((hero) => `
+                <div class="hero-item flex-shrink-0 w-1/3 md:w-1/4 lg:w-1/5">
                     <div class="cursor-pointer filter hover:contrast-125 hover:brightness-125 transition duration-300" onclick="loadPage('${hero.page}')">
                         <img 
                             src="${hero.icon}" 
