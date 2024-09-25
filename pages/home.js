@@ -4,7 +4,7 @@ function homePage() {
             <div class="text-center max-w-4xl">
                 <!-- Логотип в центре -->
                 <div class="flex justify-center mb-4">
-                    <img src="public/images/home/whatweknow121.png" alt="WarCraft Legends Logo" class="max-w-full h-56 shadow-lg"> <!-- Уменьшение высоты до 56 -->
+                    <img src="public/images/home/logo.webp" alt="WarCraft Legends Logo" class="max-w-full h-56 shadow-lg"> <!-- Уменьшение высоты до 56 -->
                 </div>
                 <!-- Описание проекта -->
                 <h1 class="sr-only">WarCraft Legends</h1>

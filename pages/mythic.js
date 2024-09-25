@@ -15,37 +15,37 @@ function mythicPage() {
     // Modifiers array with names included
     const modifiers = [
         {
-            icon: 'public/images/mythic/ability_rogue_sprint.jpg',
+            icon: 'public/images/mythic/ability_rogue_sprint.webp',
             name: 'Boots of Speed',
             description: 'Increased enemy movement speed +50%',
         },
         {
-            icon: 'public/images/mythic/ability_toughness.jpg',
+            icon: 'public/images/mythic/ability_toughness.webp',
             name: 'Fortified',
             description: 'Additional enemy protection +5',
         },
         {
-            icon: 'public/images/mythic/achievement_boss_archaedas.jpg',
+            icon: 'public/images/mythic/achievement_boss_archaedas.webp',
             name: 'Tyrannical',
             description: 'Additional enemy health +30%',
         },
         {
-            icon: 'public/images/mythic/inv_staff_07.jpg',
+            icon: 'public/images/mythic/inv_staff_07.webp',
             name: 'Brilliance',
             description: 'Enemy mana regeneration aura 200%',
         },
         {
-            icon: 'public/images/mythic/spell_nature_thorns.jpg',
+            icon: 'public/images/mythic/spell_nature_thorns.webp',
             name: 'Thorns',
             description: 'Aura returns 30% of damage to attackers',
         },
         {
-            icon: 'public/images/mythic/spell_shadow_nethercloak.jpg',
+            icon: 'public/images/mythic/spell_shadow_nethercloak.webp',
             name: 'Cloak of Shadows',
             description: 'Enemies receive constant invisibility',
         },
         {
-            icon: 'public/images/mythic/spell_shadow_vampiricaura.jpg',
+            icon: 'public/images/mythic/spell_shadow_vampiricaura.webp',
             name: 'Vampiric Aura',
             description: 'Attack converts 50% of damage into health',
         },
@@ -56,7 +56,7 @@ function mythicPage() {
         return `
             <tr class="hover:bg-gray-700 transition-colors duration-200">
                 <td class="p-2">
-                    <div class="flex items-center justify-center w-16 h-16 bg-transparent border border-gray-600">
+                    <div class="rounded-lg overflow-hidden flex items-center justify-center w-16 h-16 bg-transparent border border-gray-600">
                         <img src="${modifier.icon}" alt="Modifier Icon" class="w-full h-full object-cover">
                     </div>
                 </td>

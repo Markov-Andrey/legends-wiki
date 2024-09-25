@@ -4,7 +4,7 @@ function mapsPage() {
         <h2 class="text-3xl font-bold text-yellow-300 mb-4 text-center">Alterac's Justice</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <img src="public/images/maps/alteracjustice.jpg" alt="Alterac's Justice Map" class="col-span-1 w-full h-auto rounded-lg shadow-lg">
+            <img src="public/images/maps/alteracjustice.webp" alt="Alterac's Justice Map" class="col-span-1 w-full h-auto rounded-lg shadow-lg">
             
             <div class="col-span-3 flex flex-col gap-4">
                 <div>

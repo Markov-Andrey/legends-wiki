@@ -20,27 +20,27 @@ function legendsPage() {
     const heroes = [
         {
             name: "Hero 1",
-            icon: "public/images/legends/arthas1.png",
+            icon: "public/images/legends/arthas.webp",
             page: "arthas",
         },
         {
             name: "Hero 2",
-            icon: "public/images/legends/uther1.png",
+            icon: "public/images/legends/uther.webp",
             page: "arthas",
         },
         {
             name: "Hero 3",
-            icon: "public/images/legends/wrynn1.png",
+            icon: "public/images/legends/wrynn.webp",
             page: "arthas",
         },
         {
             name: "Hero 4",
-            icon: "public/images/legends/tyrande1.png",
+            icon: "public/images/legends/tyrande.webp",
             page: "arthas",
         },
         {
             name: "Hero 5",
-            icon: "public/images/legends/thrall1.png",
+            icon: "public/images/legends/thrall.webp",
             page: "arthas",
         },
     ];

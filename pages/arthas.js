@@ -2,7 +2,7 @@ async function arthasPage() {
     const characterData = {
         name: "Arthas Lich King",
         subtitle: "Army of Scourge",
-        image: "public/images/legends/arthas1.png",
+        image: "public/images/legends/arthas.webp",
         mechanics: [
             {
                 title: "Soul Harvest",
