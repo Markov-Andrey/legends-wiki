@@ -3,7 +3,7 @@ function renderHeroGrid(heroes) {
         <div class="grid grid-cols-3 mx-auto w-1/2">
             ${heroes.map(hero => `
                 <div class="flex justify-center items-center">
-                    <div class="cursor-pointer filter hover:contrast-125 hover:brightness-125 transition duration-300" onclick="loadPage('arthas')">
+                    <div class="cursor-pointer filter hover:contrast-125 hover:brightness-125 transition duration-300" onclick="loadPage('${hero.page}')">
                         <img 
                             src="${hero.icon}" 
                             alt="${hero.name}" 
@@ -19,29 +19,29 @@ function renderHeroGrid(heroes) {
 function legendsPage() {
     const heroes = [
         {
-            name: "Hero 1",
+            name: "Arthas",
             icon: "public/images/legends/arthas.webp",
             page: "arthas",
         },
         {
-            name: "Hero 2",
+            name: "Uther",
             icon: "public/images/legends/uther.webp",
-            page: "arthas",
+            page: "uther",
         },
         {
-            name: "Hero 3",
+            name: "Wrynn",
             icon: "public/images/legends/wrynn.webp",
-            page: "arthas",
+            page: "wrynn",
         },
         {
-            name: "Hero 4",
+            name: "Tyrande",
             icon: "public/images/legends/tyrande.webp",
-            page: "arthas",
+            page: "tyrande",
         },
         {
-            name: "Hero 5",
+            name: "Thrall",
             icon: "public/images/legends/thrall.webp",
-            page: "arthas",
+            page: "thrall",
         },
     ];
 

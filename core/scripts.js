@@ -7,7 +7,13 @@ const scriptFiles = {
         'maps': true,
         'mythic': true,
         'items': true,
-        'arthas': true,
+        'legend': {
+            'arthas': true,
+            'uther': true,
+            'wrynn': true,
+            'tyrande': true,
+            'thrall': true,
+        },
     },
     core: {
         'render': true,

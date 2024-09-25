@@ -13,6 +13,26 @@ const webRoutes = {
         'method': legendsPage,
         'title': 'Legends',
     },
+    'arthas': {
+        'method': arthasPage,
+        'title': 'Arthas',
+    },
+    'uther': {
+        'method': utherPage,
+        'title': 'Uther',
+    },
+    'wrynn': {
+        'method': wrynnPage,
+        'title': 'Wrynn',
+    },
+    'tyrande': {
+        'method': tyrandePage,
+        'title': 'Tyrande',
+    },
+    'thrall': {
+        'method': thrallPage,
+        'title': 'Thrall',
+    },
     'maps': {
         'method': mapsPage,
         'title': 'Maps',
@@ -21,10 +41,6 @@ const webRoutes = {
         'method': mythicPage,
         'title': 'Mythic+',
         'css': 'hobby',
-    },
-    'arthas': {
-        'method': arthasPage,
-        'title': 'Arthas',
     },
     '404': {
         'method': errorPage,
