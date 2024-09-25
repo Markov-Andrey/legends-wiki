@@ -3,7 +3,7 @@ function renderHeroGrid(heroes) {
         <div class="grid grid-cols-3 mx-auto w-1/2">
             ${heroes.map(hero => `
                 <div class="flex justify-center items-center">
-                    <div class="cursor-pointer filter hover:contrast-150 hover:brightness-125 transition duration-300" onclick="loadPage('arthas')">
+                    <div class="cursor-pointer filter hover:contrast-125 hover:brightness-125 transition duration-300" onclick="loadPage('arthas')">
                         <img 
                             src="${hero.icon}" 
                             alt="${hero.name}" 
