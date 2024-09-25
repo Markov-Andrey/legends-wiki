@@ -7,16 +7,21 @@ const scriptFiles = {
         'maps': true,
         'mythic': true,
         'items': true,
+        'arthas': true,
     },
     core: {
         'render': true,
         'modal': true,
-    }
+    },
+    components: {
+        'characterComponent': true,
+    },
 };
 
 function includeScripts(obj, folder = '') {
     for (const key in obj) {
         const filePath = folder ? `${folder}/${key}` : key;
+
         if (typeof obj[key] === 'object') {
             includeScripts(obj[key], filePath);
         } else {

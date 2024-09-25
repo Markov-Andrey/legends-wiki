@@ -22,6 +22,10 @@ const webRoutes = {
         'title': 'Mythic+',
         'css': 'hobby',
     },
+    'arthas': {
+        'method': arthasPage,
+        'title': 'Arthas',
+    },
     '404': {
         'method': errorPage,
         'title': '404',
@@ -71,6 +75,8 @@ async function loadPage(page) {
         console.error('Error loading page:', error);
         contentDiv.innerHTML = 'Failed to load the page.';
     }
+
+    window.location.hash = `#${page}`;
 
     title.innerHTML = pageTitle;
 }

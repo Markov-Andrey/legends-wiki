@@ -65,9 +65,6 @@ function handleClick(clickedElement, href) {
 
     // Загружаем соответствующую страницу
     loadPage(href.slice(1));
-
-    // Изменяем хэш в адресной строке
-    history.pushState(null, '', href);
 }
 
 generateHeader();
