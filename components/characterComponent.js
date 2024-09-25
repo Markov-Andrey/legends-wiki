@@ -1,5 +1,5 @@
 async function characterComponent(characterData) {
-    const { name, subtitle, image, mechanics, features } = characterData;
+    const { name, subtitle, image, mechanics, features, history } = characterData;
 
     return `
         <div class="bg-gray-900 rounded-lg shadow-lg p-6 text-white max-w-4xl mx-auto">
@@ -17,6 +17,12 @@ async function characterComponent(characterData) {
                     <p class="text-xl italic text-gray-400">(${subtitle})</p>
                 </div>
             </div>
+
+            <!-- History Section -->
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold mb-2">History</h2>
+                <div class="grid gap-1">${history}</div>
+            </div>
             
             <!-- Mechanics Section -->
             <div class="mb-6">
@@ -32,7 +38,7 @@ async function characterComponent(characterData) {
             </div>
 
             <!-- Features Section -->
-            <div>
+            <div class="mb-6"> <!-- Добавлен отступ для раздела History -->
                 <h2 class="text-2xl font-semibold mb-2">Features</h2>
                 <ul class="list-disc pl-6">
                     ${features.map(feature => `

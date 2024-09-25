@@ -24,7 +24,13 @@ async function thrallPage() {
             { text: "Limited Unit Selection", isPositive: false },
             { text: "Reliance on Totems", isPositive: false },
             { text: "Increasing Totem Costs", isPositive: false }
-        ]
+        ],
+        history: `
+            <p>Born into slavery, Thrall rose from the chains of captivity to become a legendary leader of the orcish Horde.</p>
+            <p>Guided by honor and the teachings of shamanism, he sought to unite his people and lead them to a future free from the corruption that once plagued them.</p>
+            <p>Under his leadership, the Horde found new purpose, strength, and a home in the land of Durotar.</p>
+            <p>A champion of peace and balance, Thrall’s journey is one of redemption, wisdom, and unbreakable resolve in the face of overwhelming odds.</p>
+        `
     };
 
     return characterComponent(characterData);

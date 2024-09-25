@@ -20,7 +20,13 @@ async function wrynnPage() {
             { text: "High price of food", isPositive: false },
             { text: "High cost of losing units", isPositive: false },
             { text: "Few healing abilities", isPositive: false }
-        ]
+        ],
+        history: `
+            <p>The mighty King of Stormwind, a warrior of strength and determination.</p>
+            <p>Born into royalty, Varian’s life was shaped by trials that tested his courage—from the fall of Stormwind to his betrayal and capture.</p>
+            <p>Despite these challenges, Varian emerged as a fierce and just leader, earning the name "Lo'Gosh" or "Ghost Wolf" for his battle prowess.</p>
+            <p>His reign was characterized by profound love for his people and unwavering commitment to the Alliance. Varian’s legacy of resilience, bravery, and leadership is forever etched in history.</p>
+        `
     };
 
     return characterComponent(characterData);
