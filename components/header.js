@@ -7,7 +7,7 @@ const links = [
     {
         href: '#legends',
         text: 'Legends',
-        icon: '<i class="las la-2x la-grin-stars"></i>'
+        icon: '<i class="las la-2x la-universal-access"></i>'
     },
     {
         href: '#maps',
@@ -36,7 +36,7 @@ function generateHeader() {
                         <a href="${linkData.href}" class="inline-flex items-center justify-center p-4 border-b-2 border-transparent rounded-t-lg group hover:text-white hover:border-gray-300
                             ${window.location.hash === linkData.href ? 'active-link' : ''}">
                             ${linkData.icon ?? ''}
-                            <span style="margin-left: 10px;">${linkData.text}</span>
+                            <span class="hidden md:block" style="margin-left: 10px;">${linkData.text}</span> <!-- Tailwind classes for visibility -->
                         </a>
                     </li>
                 `).join('')}
@@ -44,10 +44,10 @@ function generateHeader() {
         </div>
     `;
 
-    // Добавляем обработчики событий для всех ссылок
+    // Adding event listeners for all links
     document.querySelectorAll('a[href^="#"]').forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault(); // Отключаем стандартное поведение перехода по ссылке
+            e.preventDefault(); // Disable default anchor behavior
             const href = link.getAttribute('href');
             handleClick(link, href);
         });
@@ -55,21 +55,21 @@ function generateHeader() {
 }
 
 function handleClick(clickedElement, href) {
-    // Убираем классы активной ссылки у всех элементов
+    // Remove active link classes from all elements
     document.querySelectorAll('.group').forEach(link => {
         link.classList.remove('active-link');
     });
 
-    // Добавляем класс активной ссылке
+    // Add active link class to the clicked element
     clickedElement.classList.add('active-link');
 
-    // Загружаем соответствующую страницу
+    // Load the corresponding page
     loadPage(href.slice(1));
 }
 
 generateHeader();
 
-// Обновляем активную ссылку при загрузке страницы
+// Update the active link on page load
 window.addEventListener('hashchange', () => {
     const currentHash = window.location.hash || '#home';
     document.querySelectorAll('.group').forEach(link => {
