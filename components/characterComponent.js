@@ -21,7 +21,7 @@ async function characterComponent(characterData) {
             <!-- History Section -->
             <div class="mb-6">
                 <h2 class="text-2xl font-semibold mb-2">History</h2>
-                <div class="grid gap-1">${history}</div>
+                <div class="grid italic text-gray-300 gap-1">${history}</div>
             </div>
             
             <!-- Mechanics Section -->
