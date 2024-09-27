@@ -1,7 +1,7 @@
 function mapsPage() {
     const alteracUnits = [
         {
-            img: 'public/images/maps/alterac/alterac_unit_1.png',
+            img: 'public/images/maps/alterac/alterac_unit_1.webp',
             name: 'Syndicate Assassin',
             abilities: [
                 { name: 'Shadow Move', description: 'The unit remains invisible until it strikes, emerging from the shadows to attack.' },
@@ -9,7 +9,7 @@ function mapsPage() {
             ],
         },
         {
-            img: 'public/images/maps/alterac/alterac_unit_2.png',
+            img: 'public/images/maps/alterac/alterac_unit_2.webp',
             name: 'Syndicate Ambal',
             abilities: [
                 { name: 'Protection Aura', description: 'Grants nearby allied units increased defense, forming a protective shield around them.' },
@@ -17,7 +17,7 @@ function mapsPage() {
             ],
         },
         {
-            img: 'public/images/maps/alterac/alterac_unit_3.png',
+            img: 'public/images/maps/alterac/alterac_unit_3.webp',
             name: 'Syndicate Wizard',
             abilities: [
                 { name: 'Electro Shield', description: 'Creates a shield around the target, periodically dealing damage to nearby enemies.' },
@@ -74,8 +74,8 @@ function mapsPage() {
                     <h2 class="font-bold">👑 Special Units:</h2>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         ${alteracUnits.map(unit => `
-                        <div class="bg-black border-2 border-gray-500 p-4 rounded-lg text-center">
-                            <img src="${unit.img}" alt="${unit.name}" class="max-w-[200px] h-[200px] object-cover mb-4 rounded mx-auto">
+                        <div class="bg-black border-2 border-gray-500 p-2 rounded-lg text-center">
+                            <img src="${unit.img}" alt="${unit.name}" class="max-w-[200px] h-[200px] object-cover rounded mx-auto">
                             <h3 class="text-lg font-bold text-yellow-200 mb-2">${unit.name}</h3>
                             <ul class="text-sm text-left">
                                 ${unit.abilities.map(ability => `
