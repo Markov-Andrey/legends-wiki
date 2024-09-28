@@ -4,24 +4,24 @@ function mapsPage() {
             img: 'public/images/maps/alterac/alterac_unit_1.webp',
             name: 'Syndicate Assassin',
             abilities: [
-                { name: 'Shadow Move', description: 'The unit remains invisible until it strikes, emerging from the shadows to attack.' },
-                { name: 'Acid Weapon', description: 'Slows the target\'s attack and movement speed, while also dealing periodic damage over time.' }
+                { name: 'Critical Strike', description: '20% chance to deal double damage' },
+                { name: 'Envenomed Weapons', description: 'Deals periodic poison damage.' }
             ],
         },
         {
             img: 'public/images/maps/alterac/alterac_unit_2.webp',
             name: 'Syndicate Ambal',
             abilities: [
-                { name: 'Protection Aura', description: 'Grants nearby allied units increased defense, forming a protective shield around them.' },
-                { name: 'Heavy Mace', description: 'Has a chance to deal bonus damage and stun the target with a powerful strike.' }
+                { name: 'Devotion Aura', description: 'Grants nearby allied units increased defense.' },
+                { name: 'Bash', description: 'Has a chance to deal bonus damage and stun the target with a powerful strike.' }
             ],
         },
         {
             img: 'public/images/maps/alterac/alterac_unit_3.webp',
             name: 'Syndicate Wizard',
             abilities: [
-                { name: 'Electro Shield', description: 'Creates a shield around the target, periodically dealing damage to nearby enemies.' },
-                { name: 'Teleport', description: 'Instantly teleports the unit to a nearby location, allowing quick repositioning.' }
+                { name: 'Purge', description: 'Dispels negative and positive effects on the target.' },
+                { name: 'Lightning Shield', description: 'Creates a shield around the target, periodically dealing damage to nearby enemies.' }
             ],
         }
     ];
