@@ -42,5 +42,10 @@ function includeScripts(obj, folder = '') {
         }
     }
 }
-
 includeScripts(scriptFiles);
+
+window.onload = function() {
+    if (window.location.hash === '') {
+        window.location.hash = 'home';
+    }
+};
