@@ -6,7 +6,7 @@
     margin-right: 5px; /* Space between circle and text */
 }
 
-.weak {
+.strong {
     background-color: red; /* Red for weak */
 }
 
@@ -14,6 +14,6 @@
     background-color: orange; /* Orange for medium */
 }
 
-.strong {
+.weak {
     background-color: green; /* Green for strong */
 }
