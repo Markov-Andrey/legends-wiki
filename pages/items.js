@@ -79,39 +79,39 @@ async function itemsPage() {
 
     const itemsHTML = weak_items.map(item => {
         return `
-            <div class="flex flex-col items-center p-2 bg-gray-800 rounded-lg transition-shadow duration-200 hover:bg-gray-700">
-                <div class="relative rounded-lg overflow-hidden flex items-center justify-center w-20 h-20 bg-transparent border border-gray-600 shadow-inner shadow-inner">
-                    <img src="${item.icon}" alt="${item.name}" class="w-full h-full object-cover">
-                </div>
-                <h3 class="mt-2 text-sm font-bold">${item.name}</h3>
-                <p class="text-xs text-white text-center">${item.description}</p>
+        <div class="flex flex-col items-center p-2 bg-gray-800 rounded-lg transition-shadow duration-200 hover:bg-gray-700">
+            <div class="relative rounded-lg overflow-hidden flex items-center justify-center w-20 h-20 bg-transparent border border-gray-600 shadow-inner">
+                <img src="${item.icon}" alt="${item.name}" class="w-full h-full object-cover">
             </div>
-        `;
+            <h3 class="mt-2 text-sm font-bold">${item.name}</h3>
+            <p class="text-xs text-white text-center">${item.description}</p>
+        </div>
+    `;
     }).join('');
 
     return `
-        <div class="flex flex-col items-center">
-            <div class="text-center mb-4">
-                <h2 class="text-2xl font-bold text-yellow-300">Items</h2>
-                <p class="text-base">
-                    Explore the unique items that grant you extraordinary powers and boost your stats for the challenges ahead!
-                </p>
-                <p class="text-base">
-                    All items are divided into three groups based on the strength of the creep camps:
-                </p>
-                <p class="text-base">
-                    Weak, Medium, and Strong camps drop different tiers of items, so the tougher the camp, the better the rewards!
-                </p>
-            </div>
-    
-            <h3 class="text-xl font-bold mb-2 text-yellow-300"><div class="circle weak"></div>Weak Creep Camp</h3>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 w-full max-w-screen-lg">
-                ${itemsHTML}
-            </div>
-    
-            <p class="text-base text-center mt-4 text-gray-300">
-                Work in progress!
+    <div class="flex flex-col items-center">
+        <div class="text-center mb-4">
+            <h2 class="text-2xl font-bold text-yellow-300">Items</h2>
+            <p class="text-base">
+                Explore the unique items that grant you extraordinary powers and boost your stats for the challenges ahead!
+            </p>
+            <p class="text-base">
+                All items are divided into three groups based on the strength of the creep camps:
+            </p>
+            <p class="text-base">
+                Weak, Medium, and Strong camps drop different tiers of items, so the tougher the camp, the better the rewards!
             </p>
         </div>
+
+        <h3 class="text-xl font-bold mb-2 text-yellow-300"><div class="circle weak"></div>Weak Creep Camp</h3>
+        <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 w-full max-w-screen-lg">
+            ${itemsHTML}
+        </div>
+
+        <p class="text-base text-center mt-4 text-gray-300">
+            Work in progress!
+        </p>
+    </div>
     `;
 }
