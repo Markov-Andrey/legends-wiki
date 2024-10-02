@@ -40,7 +40,6 @@ const webRoutes = {
     'mythic': {
         'method': mythicPage,
         'title': 'Mythic+',
-        'css': 'hobby',
     },
     '404': {
         'method': errorPage,
