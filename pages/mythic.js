@@ -27,7 +27,7 @@ function mythicPage() {
         {
             icon: 'public/images/mythic/achievement_boss_archaedas.webp',
             name: 'Tyrannical',
-            description: 'Additional enemy health +30%',
+            description: 'Additional enemy health +20%',
         },
         {
             icon: 'public/images/mythic/inv_staff_07.webp',
