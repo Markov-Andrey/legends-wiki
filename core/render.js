@@ -33,6 +33,10 @@ const webRoutes = {
         'method': thrallPage,
         'title': 'Thrall',
     },
+    'whitemane': {
+        'method': whitemanePage,
+        'title': 'Whitemane',
+    },
     'maps': {
         'method': mapsPage,
         'title': 'Maps',

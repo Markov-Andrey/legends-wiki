@@ -43,6 +43,11 @@ function legendsPage() {
             icon: "public/images/legends/thrall.webp",
             page: "thrall",
         },
+        {
+            name: "Whitemane",
+            icon: "public/images/legends/whitemane.webp",
+            page: "whitemane",
+        },
     ];
 
     return `

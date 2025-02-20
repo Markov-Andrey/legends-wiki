@@ -13,6 +13,7 @@ const scriptFiles = {
             'wrynn': true,
             'tyrande': true,
             'thrall': true,
+            'whitemane': true,
         },
     },
     core: {
