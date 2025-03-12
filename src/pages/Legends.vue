@@ -1,21 +1,26 @@
 <template>
-    <div class="p-0">
-        <div class="flex flex-wrap justify-center mx-auto w-full">
+    <div class="pt-10">
+        <div class="flex gap-3 flex-wrap justify-center mx-auto w-full">
             <div
                 v-for="hero in heroes"
                 :key="hero.page"
-                class="hero-item flex-shrink-0 w-1/4 md:w-1/5 lg:w-1/6 xl:w-1/7"
+                class="flex-shrink-0"
             >
-                <div
-                    class="cursor-pointer filter hover:contrast-125 hover:brightness-125 transition duration-300"
-                    @click="$router.push({ name: 'legend', params: { legend: hero.page } })"
+                <router-link
+                    :to="{ name: 'legend', params: { legend: hero.page } }"
+                    class="group cursor-pointer flex flex-col items-center transform"
                 >
-                    <img
-                        :src="hero.icon"
-                        :alt="hero.name"
-                        class="object-cover w-full h-auto"
-                    />
-                </div>
+                    <div class="group-hover:scale-110 transition-all duration-500 ease-in-out flex justify-center items-center">
+                        <img
+                            :src="hero.icon"
+                            :alt="hero.name"
+                            class="object-cover w-24 h-24 group-hover:contrast-125 group-hover:brightness-125 transition-all"
+                        />
+                    </div>
+                    <span class="mt-2 text-center text-white text-xs group-hover:text-amber-400 transition-colors">
+                        {{ hero.title }}
+                    </span>
+                </router-link>
             </div>
         </div>
     </div>
@@ -27,12 +32,12 @@ export default {
     data() {
         return {
             heroes: [
-                { name: "Arthas", icon: `${__IMAGE_PATH__}/legends/arthas.webp`, page: "arthas" },
-                { name: "Uther", icon: `${__IMAGE_PATH__}/legends/uther.webp`, page: "uther" },
-                { name: "Wrynn", icon: `${__IMAGE_PATH__}/legends/wrynn.webp`, page: "wrynn" },
-                { name: "Tyrande", icon: `${__IMAGE_PATH__}/legends/tyrande.webp`, page: "tyrande" },
-                { name: "Thrall", icon: `${__IMAGE_PATH__}/legends/thrall.webp`, page: "thrall" },
-                { name: "Whitemane", icon: `${__IMAGE_PATH__}/legends/whitemane.webp`, page: "whitemane" }
+                { name: "Arthas", icon: `${__IMAGE_PATH__}/legends/arthas.webp`, page: "arthas", title: "Arthas Lich King" },
+                { name: "Uther", icon: `${__IMAGE_PATH__}/legends/uther.webp`, page: "uther", title: "Uther Lightbringer" },
+                { name: "Wrynn", icon: `${__IMAGE_PATH__}/legends/wrynn.webp`, page: "wrynn", title: "Varian Wrynn" },
+                { name: "Tyrande", icon: `${__IMAGE_PATH__}/legends/tyrande.webp`, page: "tyrande", title: "Tyrande Whisperwind" },
+                { name: "Thrall", icon: `${__IMAGE_PATH__}/legends/thrall.webp`, page: "thrall", title: "Thrall Warchief" },
+                { name: "Whitemane", icon: `${__IMAGE_PATH__}/legends/whitemane.webp`, page: "whitemane", title: "Sally Whitemane" },
             ]
         };
     }

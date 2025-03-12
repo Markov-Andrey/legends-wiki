@@ -1,9 +1,9 @@
 <template>
-    <div v-if="characterData" class="p-0">
-        <div class="bg-gray-900 rounded-lg shadow-lg p-6 text-white max-w-4xl mx-auto">
-            <div class="mb-6 flex gap-4">
+    <div class="bg-gray-900 mx-auto max-w-4xl">
+        <div v-if="characterData" class="rounded-lg shadow-lg my-10 m-10 text-white">
+            <div class="flex gap-4">
                 <div class="flex-shrink-0 mb-4">
-                    <img :src="`${characterData.image}`" :alt="characterData.name" class="rounded-lg h-24 w-24 object-cover" />
+                    <img :src="characterData.image" :alt="characterData.name" class="rounded-lg h-24 w-24 object-cover" />
                 </div>
                 <div class="flex-grow flex flex-col justify-center">
                     <h1 class="text-4xl text-yellow-400 font-bold">{{ characterData.name }}</h1>
@@ -37,6 +37,9 @@
                 </ul>
             </div>
         </div>
+
+        <div v-else>
+        </div>
     </div>
 </template>
 
@@ -49,14 +52,25 @@ export default {
         };
     },
     async created() {
-        const characterName = this.$route.params.legend;
+        await this.loadCharacterData();
+    },
+    methods: {
+        async loadCharacterData() {
+            const characterName = this.$route.params.legend;
 
-        try {
-            const characterModule = await import(`@/assets/legend/${characterName}.js`);
-            this.characterData = characterModule.characterData;
-        } catch (error) {
-            console.error("Ошибка при загрузке данных персонажа:", error);
-        }
+            try {
+                const characterModule = await import(`@/assets/legend/${characterName}.js`);
+                this.characterData = characterModule.characterData;
+            } catch (error) {
+                console.error("Ошибка при загрузке данных персонажа:", error);
+            }
+        },
+    },
+    watch: {
+        '$route.params.legend': 'loadCharacterData',
+    },
+    beforeRouteUpdate(to, from, next) {
+        this.loadCharacterData().then(() => next());
     },
 };
 </script>

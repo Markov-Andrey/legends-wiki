@@ -1,50 +1,62 @@
 <template>
-    <div class="border-b border-gray-200 dark:border-gray-700 dark:bg-cyan-950">
-        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400">
-            <li v-for="link in links" :key="link.href">
-                <router-link
-                    :to="link.href"
-                    class="inline-flex items-center justify-center p-4 border-b-2 border-transparent rounded-t-lg group hover:text-white hover:border-gray-300"
-                    :class="{ 'active-link': isActiveLink(link.href) }"
+    <header class="bg-gradient-to-b from-gray-900 to-cyan-900 text-white border-b border-gray-700 relative">
+        <div class="px-4 py-1 max-w-7xl mx-auto flex items-center justify-between">
+            <router-link to="/home" class="flex items-center space-x-3">
+                <img :src="logo" class="h-10 w-10" alt="Warcraft Legends Logo" />
+                <span class="text-2xl text-amber-400 hover:text-amber-500 transition-all font-semibold hidden sm:block">
+                    Warcraft Legends
+                </span>
+            </router-link>
+            <div class="flex space-x-6">
+                <div
+                    v-for="link in links"
+                    :key="link.text"
+                    @click="navigateTo(link.href)"
+                    class="cursor-pointer flex items-center px-4 py-2 text-lg font-medium rounded-lg transition duration-200"
+                    :class="{
+                        'bg-gray-700 text-white': isActiveLink(link.href),
+                        'text-amber-400 hover:bg-gray-600 hover:text-amber-500': !isActiveLink(link.href),
+                        'active:scale-95': true,
+                    }"
                 >
-                    <span v-html="link.icon"></span>
-                    <span class="hidden md:block" style="margin-left: 10px;">{{ link.text }}</span>
-                </router-link>
-            </li>
-        </ul>
-    </div>
+                    <span v-html="link.icon" class="text-xl"></span>
+                    <span class="hidden md:block ml-2">{{ link.text }}</span>
+                </div>
+            </div>
+        </div>
+    </header>
 </template>
 
 <script>
 export default {
-    name: 'Header',
+    name: "Header",
     data() {
         return {
+            logo: `${__IMAGE_PATH__}/favicon.ico`,
             links: [
-                { href: '/home', text: 'Home', icon: '<i class="las la-2x la-home"></i>' },
-                { href: '/legends', text: 'Legends', icon: '<i class="las la-2x la-universal-access"></i>' },
-                { href: '/maps', text: 'Maps', icon: '<i class="las la-2x la-map"></i>' },
-                { href: '/mythic', text: 'Mythic+', icon: '<i class="las la-2x la-crown"></i>' },
-                { href: '/items', text: 'Items', icon: '<i class="las la-2x la-cookie"></i>' },
+                { href: "/home", text: "Home", icon: '<i class="las la-home"></i>' },
+                { href: "/legends", text: "Legends", icon: '<i class="las la-universal-access"></i>' },
+                { href: "/maps", text: "Maps", icon: '<i class="las la-map"></i>' },
+                { href: "/mythic", text: "Mythic+", icon: '<i class="las la-crown"></i>' },
+                { href: "/items", text: "Items", icon: '<i class="las la-cookie"></i>' },
             ],
         };
     },
     computed: {
         currentPath() {
             return this.$route.path;
-        }
+        },
     },
     methods: {
+        navigateTo(href) {
+            this.$router.push(href);
+        },
         isActiveLink(href) {
-            return (href === '/' && this.currentPath === '/') || (this.currentPath !== '/' && this.currentPath.startsWith(href));
-        }
-    }
+            return this.currentPath.startsWith(href);
+        },
+    },
 };
 </script>
 
 <style scoped>
-.active-link {
-    color: white;
-    border-color: gray;
-}
 </style>
