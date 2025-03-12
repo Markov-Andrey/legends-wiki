@@ -27,12 +27,12 @@ export default {
     data() {
         return {
             heroes: [
-                { name: "Arthas", icon: "public/images/legends/arthas.webp", page: "arthas" },
-                { name: "Uther", icon: "public/images/legends/uther.webp", page: "uther" },
-                { name: "Wrynn", icon: "public/images/legends/wrynn.webp", page: "wrynn" },
-                { name: "Tyrande", icon: "public/images/legends/tyrande.webp", page: "tyrande" },
-                { name: "Thrall", icon: "public/images/legends/thrall.webp", page: "thrall" },
-                { name: "Whitemane", icon: "public/images/legends/whitemane.webp", page: "whitemane" }
+                { name: "Arthas", icon: `${__IMAGE_PATH__}/legends/arthas.webp`, page: "arthas" },
+                { name: "Uther", icon: `${__IMAGE_PATH__}/legends/uther.webp`, page: "uther" },
+                { name: "Wrynn", icon: `${__IMAGE_PATH__}/legends/wrynn.webp`, page: "wrynn" },
+                { name: "Tyrande", icon: `${__IMAGE_PATH__}/legends/tyrande.webp`, page: "tyrande" },
+                { name: "Thrall", icon: `${__IMAGE_PATH__}/legends/thrall.webp`, page: "thrall" },
+                { name: "Whitemane", icon: `${__IMAGE_PATH__}/legends/whitemane.webp`, page: "whitemane" }
             ]
         };
     }

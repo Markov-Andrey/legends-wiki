@@ -3,7 +3,7 @@
         <div class="bg-gray-900 rounded-lg shadow-lg p-6 text-white max-w-4xl mx-auto">
             <div class="mb-6 flex gap-4">
                 <div class="flex-shrink-0 mb-4">
-                    <img :src="`/images/legends/${characterData.image}`" :alt="characterData.name" class="rounded-lg h-24 w-24 object-cover" />
+                    <img :src="`${characterData.image}`" :alt="characterData.name" class="rounded-lg h-24 w-24 object-cover" />
                 </div>
                 <div class="flex-grow flex flex-col justify-center">
                     <h1 class="text-4xl text-yellow-400 font-bold">{{ characterData.name }}</h1>

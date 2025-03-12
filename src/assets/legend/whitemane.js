@@ -1,7 +1,7 @@
 export const characterData = {
     name: "Sally Whitemane",
     subtitle: "Scarlet Crusade",
-    image: "whitemane.webp",
+    image: `${__IMAGE_PATH__}/legends/whitemane.webp`,
     mechanics: [
         {
             title: "Scarlet March",

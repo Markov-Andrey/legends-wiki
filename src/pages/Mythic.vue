@@ -48,37 +48,37 @@ export default {
       `,
             modifiers: [
                 {
-                    icon: "/images/mythic/ability_rogue_sprint.webp",
+                    icon: `${__IMAGE_PATH__}/mythic/ability_rogue_sprint.webp`,
                     name: 'Boots of Speed',
                     description: 'Increased enemy movement speed +50%',
                 },
                 {
-                    icon: "/images/mythic/ability_toughness.webp",
+                    icon: `${__IMAGE_PATH__}/mythic/ability_toughness.webp`,
                     name: 'Fortified',
                     description: 'Additional enemy protection +5',
                 },
                 {
-                    icon: "/images/mythic/achievement_boss_archaedas.webp",
+                    icon: `${__IMAGE_PATH__}/mythic/achievement_boss_archaedas.webp`,
                     name: 'Tyrannical',
                     description: 'Additional enemy health +20%',
                 },
                 {
-                    icon: "/images/mythic/inv_staff_07.webp",
+                    icon: `${__IMAGE_PATH__}/mythic/inv_staff_07.webp`,
                     name: 'Brilliance',
                     description: 'Enemy mana regeneration aura 200%',
                 },
                 {
-                    icon: "/images/mythic/spell_nature_thorns.webp",
+                    icon: `${__IMAGE_PATH__}/mythic/spell_nature_thorns.webp`,
                     name: 'Thorns',
                     description: 'Aura returns 30% of damage to attackers',
                 },
                 {
-                    icon: "/images/mythic/spell_shadow_nethercloak.webp",
+                    icon: `${__IMAGE_PATH__}/mythic/spell_shadow_nethercloak.webp`,
                     name: 'Cloak of Shadows',
                     description: 'Enemies receive constant invisibility',
                 },
                 {
-                    icon: "/images/mythic/spell_shadow_vampiricaura.webp",
+                    icon: `${__IMAGE_PATH__}/mythic/spell_shadow_vampiricaura.webp`,
                     name: 'Vampiric Aura',
                     description: 'Attack converts 50% of damage into health',
                 },

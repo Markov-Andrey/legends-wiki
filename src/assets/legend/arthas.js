@@ -1,7 +1,7 @@
 export const characterData = {
     name: "Arthas Lich King",
     subtitle: "Army of Scourge",
-    image: "arthas.webp",
+    image: `${__IMAGE_PATH__}/legends/arthas.webp`,
     mechanics: [
         {
             title: "Soul Harvest",

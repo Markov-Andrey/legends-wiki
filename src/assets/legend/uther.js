@@ -1,7 +1,7 @@
 export const characterData = {
     name: "Uther the Lightbringer",
     subtitle: "Paladins of the Silver Hand",
-    image: "uther.webp",
+    image: `${__IMAGE_PATH__}/legends/uther.webp`,
     mechanics: [
         {
             title: "Divine Intervention",

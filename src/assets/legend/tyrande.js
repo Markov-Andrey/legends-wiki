@@ -1,7 +1,7 @@
 export const characterData = {
     name: "Tyrande Whisperwind",
     subtitle: "Sisterhood of Elune",
-    image: "tyrande.webp",
+    image: `${__IMAGE_PATH__}/legends/tyrande.webp`,
     mechanics: [
         {
             title: "Elune's Blessing",

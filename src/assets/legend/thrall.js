@@ -1,7 +1,7 @@
 export const characterData = {
     name: "Thrall",
     subtitle: "Warchief of the Horde",
-    image: "thrall.webp",
+    image: `${__IMAGE_PATH__}/legends/thrall.webp`,
     mechanics: [
         {
             title: "Totems",

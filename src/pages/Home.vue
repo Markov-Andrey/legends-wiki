@@ -43,7 +43,7 @@ export default {
     name: "Home",
     data() {
         return {
-            logoSrc: '/images/home/logo.webp',
+            logoSrc: `${__IMAGE_PATH__}/home/logo.webp`,
         };
     }
 };

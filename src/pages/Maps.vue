@@ -59,7 +59,7 @@ export default {
         return {
             alteracUnits: [
                 {
-                    img: "/images/maps/alterac/alterac_unit_1.webp",
+                    img: `${__IMAGE_PATH__}/maps/alterac/alterac_unit_1.webp`,
                     name: "Syndicate Assassin",
                     abilities: [
                         { name: "Critical Strike", description: "20% chance to deal double damage" },
@@ -67,7 +67,7 @@ export default {
                     ],
                 },
                 {
-                    img: "/images/maps/alterac/alterac_unit_2.webp",
+                    img: `${__IMAGE_PATH__}/maps/alterac/alterac_unit_2.webp`,
                     name: "Syndicate Ambal",
                     abilities: [
                         { name: "Devotion Aura", description: "Grants nearby allied units increased defense." },
@@ -75,7 +75,7 @@ export default {
                     ],
                 },
                 {
-                    img: "/images/maps/alterac/alterac_unit_3.webp",
+                    img: `${__IMAGE_PATH__}/maps/alterac/alterac_unit_3.webp`,
                     name: "Syndicate Wizard",
                     abilities: [
                         { name: "Purge", description: "Dispels negative and positive effects on the target." },
@@ -97,7 +97,7 @@ export default {
           Failure will occur if you allow 5 Syndicate horses to escape.
         `,
             },
-            mapImage: "/images/maps/alterac/alteracjustice.webp",
+            mapImage: `${__IMAGE_PATH__}/maps/alterac/alteracjustice.webp`,
         };
     },
 };

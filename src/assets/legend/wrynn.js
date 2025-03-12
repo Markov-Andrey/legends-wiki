@@ -1,7 +1,7 @@
 export const characterData = {
     name: "Varian Wrynn",
     subtitle: "Stormwind Kingdom",
-    image: "wrynn.webp",
+    image: `${__IMAGE_PATH__}/legends/wrynn.webp`,
     mechanics: [
         {
             title: "Experience & Rank",
