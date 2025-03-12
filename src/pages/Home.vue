@@ -1,11 +1,11 @@
 <template>
-    <div class="flex flex-col justify-center items-center">
+    <div class="py-10 flex flex-col justify-center items-center">
         <div class="text-center max-w-4xl">
             <div class="flex justify-center mb-4">
                 <img
                     :src="logoSrc"
                     alt="WarCraft Legends Logo"
-                    class="max-w-full h-56 md:h-72 lg:h-96 object-contain"
+                    class="max-w-full h-56 object-contain"
                 />
             </div>
 
