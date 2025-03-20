@@ -5,7 +5,7 @@
                 <img
                     :src="logoSrc"
                     alt="WarCraft Legends Logo"
-                    class="max-w-full h-56 object-contain"
+                    class="logo-image max-w-full h-56 object-contain transition-all transition-filter duration-300 transform hover:scale-105 hover:saturate-150"
                 />
             </div>
 
@@ -13,10 +13,7 @@
             <p class="text-md sm:text-lg lg:text-xl mb-6 leading-relaxed">
                 Welcome to <span class="font-bold text-yellow-300">WarCraft Legends</span> — a unique adaptation of
                 StarCraft's co-op mode for
-                <span class="font-bold text-yellow-300">WarCraft Reforged</span>.
-                Here you'll find familiar mechanics, legendary heroes, and dynamic battles, woven into the epic world of
-                Azeroth.
-                Join forces with your friends and dive into epic battles against overwhelming enemy forces!
+                <span class="font-bold text-yellow-300">WarCraft Reforged</span>..
             </p>
 
             <p class="text-sm sm:text-md lg:text-lg leading-loose">
